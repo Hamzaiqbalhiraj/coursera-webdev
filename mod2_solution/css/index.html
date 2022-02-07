@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Hello Coursera</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+  margin-bottom: 20px;
+}
+div#container {
+  background-color: #000000;
+  position: relative;
+  top: 60px;
+}
+
+p{
+  border: 5px solid black;
+  background-color: #909090;
+  width: 100%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+}
+#p1
+{
+	width: 90%;
+}
+#p2
+{
+	width: 90%;
+}
+#p3
+{
+	width: 95%;
+}
+#p4 {
+  background-color: #A52A2A;
+  position: relative;
+  top: 65px;
+  left: 65px;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+}
+
+.column2 {
+  float: left;
+  width: 33.33%;
+}
+
+.column3 {
+  float: left;
+  width: 33.33%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  
+  .column1 {
+  	float: left;
+    width: 33.33%;
+  }
+    .column2 {
+    	float: left;
+    width: 33.33%;
+  }
+    .column3 {
+    	float: left;
+    width: 33.34%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .column1 {
+  	float: left;
+    width: 50%;
+  }
+  .column2 {
+  	float: left;
+    width: 50%;
+  }
+  .column3 {
+  	float: left;
+    width: 100%;
+  }
+}
+
+ @media (max-width: 767px) {
+
+  .column1 {
+    width: 100%;
+  }
+    .column2 {
+    width: 100%;
+  }
+    .column3 {
+    width: 100%;
+  }
+}
+
+</style>
 </head>
 <body>
-<h1> Hello scs!</h1>
+<h1>Our Menu</h1>
+<div id="container">
+<div class="row">
+  <div class="column1 "><p id="p1"> The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.</p></div>
+  <div class="column2 "><p id="p2"> The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.</p></div>
+  <div class="column3 "><p id="p3"> The lorem ipsum is a placeholder text used in publishing and graphic design. This filler text is a short paragraph that contains all the letters of the alphabet. The characters are spread out evenly so that the reader's attention is focused on the layout of the text instead of its content.</p></div>
+</div>
+</div>
+
 </body>
 </html>
